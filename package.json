@@ -1,0 +1,126 @@
+{
+  "name": "sensitive-fields",
+  "description": "List of sensitive fields that should be masked, obfuscated, or purged for security purposes",
+  "version": "0.0.0",
+  "author": "Nick Baugh <niftylettuce@gmail.com> (http://niftylettuce.com/)",
+  "ava": {
+    "failFast": true,
+    "verbose": true
+  },
+  "bugs": {
+    "url": "https://github.com/cabinjs/sensitive-fields/issues",
+    "email": "niftylettuce@gmail.com"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "contributors": [
+    "Nick Baugh <niftylettuce@gmail.com> (http://niftylettuce.com/)"
+  ],
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "underscore.string": "^3.3.5"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "latest",
+    "@commitlint/config-conventional": "latest",
+    "ava": "latest",
+    "codecov": "latest",
+    "cross-env": "latest",
+    "eslint": "latest",
+    "eslint-config-prettier": "latest",
+    "eslint-config-xo-lass": "latest",
+    "eslint-plugin-prettier": "latest",
+    "fixpack": "latest",
+    "husky": "latest",
+    "lint-staged": "latest",
+    "nyc": "latest",
+    "prettier": "latest",
+    "remark-cli": "latest",
+    "remark-preset-github": "latest",
+    "xo": "latest"
+  },
+  "homepage": "https://github.com/cabinjs/sensitive-fields",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && npm test",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "keywords": [
+    "bugsnag",
+    "cabin",
+    "complete",
+    "comprehensive",
+    "fields",
+    "list",
+    "log",
+    "log4j",
+    "logger",
+    "logging",
+    "logs",
+    "mask",
+    "masked",
+    "obfuscated",
+    "parse",
+    "parser",
+    "parsing",
+    "purge",
+    "raven",
+    "security",
+    "sensitive",
+    "sentry",
+    "timber",
+    "winston"
+  ],
+  "license": "MIT",
+  "lint-staged": {
+    "linters": {
+      "*.js": [
+        "xo --fix",
+        "git add"
+      ],
+      "*.md": [
+        "remark . -qfo",
+        "git add"
+      ],
+      "package.json": [
+        "fixpack",
+        "git add"
+      ]
+    }
+  },
+  "main": "index.json",
+  "prettier": {
+    "singleQuote": true,
+    "bracketSpacing": true,
+    "trailingComma": "none"
+  },
+  "remarkConfig": {
+    "plugins": [
+      "preset-github"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cabinjs/sensitive-fields"
+  },
+  "scripts": {
+    "ava": "cross-env NODE_ENV=test ava",
+    "build": "node build",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "lint": "xo && remark . -qfo",
+    "nyc": "cross-env NODE_ENV=test nyc ava",
+    "test": "npm run lint && npm run build && npm run ava",
+    "test-coverage": "npm run lint && npm run build && npm run nyc"
+  },
+  "xo": {
+    "prettier": true,
+    "space": true,
+    "extends": [
+      "xo-lass"
+    ]
+  }
+}
