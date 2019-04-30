@@ -2,6 +2,8 @@ module.exports = [
   'pwd',
   'salt',
   'password',
+  'password1',
+  'password2',
   'password_confirm',
   'passwd',
   'passwd_confirm',
