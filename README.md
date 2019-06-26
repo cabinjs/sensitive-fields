@@ -46,7 +46,7 @@ console.log(sensitiveFields);
 
 ## Complete List
 
-See [index.json](<>).
+See [index.json](index.json).
 
 
 ## Contributors
@@ -61,7 +61,7 @@ See [index.json](<>).
 [MIT](LICENSE) © [Nick Baugh](http://niftylettuce.com/)
 
 
-## 
+##
 
 [npm]: https://www.npmjs.com/
 
