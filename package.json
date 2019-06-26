@@ -19,10 +19,7 @@
   "contributors": [
     "Nick Baugh <niftylettuce@gmail.com> (http://niftylettuce.com/)"
   ],
-  "dependencies": {
-    "lodash": "^4.17.11",
-    "underscore.string": "^3.3.5"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
@@ -36,10 +33,12 @@
     "fixpack": "latest",
     "husky": "latest",
     "lint-staged": "latest",
+    "lodash": "^4.17.11",
     "nyc": "latest",
     "prettier": "latest",
     "remark-cli": "latest",
     "remark-preset-github": "latest",
+    "underscore.string": "^3.3.5",
     "xo": "latest"
   },
   "homepage": "https://github.com/cabinjs/sensitive-fields",
