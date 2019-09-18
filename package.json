@@ -33,7 +33,7 @@
     "fixpack": "latest",
     "husky": "latest",
     "lint-staged": "latest",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.15",
     "nyc": "latest",
     "prettier": "latest",
     "remark-cli": "latest",
