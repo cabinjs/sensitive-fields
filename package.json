@@ -30,7 +30,7 @@
     "eslint-config-prettier": "latest",
     "eslint-config-xo-lass": "latest",
     "eslint-plugin-prettier": "latest",
-    "fixpack": "3.0.5",
+    "fixpack": "3.0.6",
     "husky": "latest",
     "lint-staged": "latest",
     "lodash": "^4.17.15",
