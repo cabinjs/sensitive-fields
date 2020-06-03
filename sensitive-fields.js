@@ -63,7 +63,7 @@ module.exports = [
   'otp',
   'otp_pin',
   'otp_token',
-  'otp_coe',
+  'otp_code',
   'totp',
   'totp_pin',
   'totp_token',
