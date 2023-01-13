@@ -1,7 +1,7 @@
 {
   "name": "sensitive-fields",
   "description": "List of sensitive fields that should be masked, obfuscated, or purged for security purposes",
-  "version": "0.0.9",
+  "version": "1.0.0",
   "author": "Nick Baugh <niftylettuce@gmail.com> (http://niftylettuce.com/)",
   "bugs": {
     "url": "https://github.com/cabinjs/sensitive-fields/issues",
