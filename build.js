@@ -2,7 +2,6 @@ const path = require('node:path');
 const fs = require('node:fs');
 const _ = require('lodash');
 const s = require('underscore.string');
-
 const list = require('./sensitive-fields');
 
 // and we also want to add a prefixed AND affixed `_field` and `_input`
